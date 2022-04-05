@@ -10,7 +10,7 @@ import ReactTable from './Components/Tables/ReactTable'
 import MaterialTable from './Components/Tables/MaterialTable'
 
 function App() {
-  const type = 'reactHooks'
+  const type = 'material'
   const table_config = {
     reactTable: {
       headings,
@@ -25,8 +25,8 @@ function App() {
       'GridColDef[]': materialHeadings,
       rows: data,
       // for toolbar settings (filtering using toolbar (even showing/hide columns))
-      includesToolbarToggle: false,
-      defaultShowToolbar: false,
+      includesToolbarToggle: true,
+      defaultShowToolbar: true,
       getEditedData: (e) => console.log(e),
       selectable: false,
       getMultipleSelected: (e) => console.log(e),

@@ -79,7 +79,6 @@ const MaterialTable = ({config}) => {
             
             <div style={{ flexGrow: 1, margin: '0.5rem' }}>
                 <DataGrid
-                // stickyHeader
                     rows={data} 
                     columns={config.materialTable['GridColDef[]']} 
                     components={showToolbar ? {
